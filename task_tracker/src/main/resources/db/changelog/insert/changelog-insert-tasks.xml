@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="insert-tasks" author="">
+        <insert tableName="tasks">
+            <column name="title" value="task1"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="1"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task2"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="2"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task3"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="IN_PROGRESS"/>
+            <column name="user_id" value="3"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task4"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="1"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task5"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="DONE"/>
+            <column name="user_id" value="2"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task6"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="DONE"/>
+            <column name="user_id" value="3"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task7"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="IN_PROGRESS"/>
+            <column name="user_id" value="1"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task8"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="4"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task9"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="1"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task10"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="IN_PROGRESS"/>
+            <column name="user_id" value="2"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task11"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="3"/>
+        </insert>
+
+        <insert tableName="tasks">
+            <column name="title" value="task12"/>
+            <column name="description" value="yyyyyyyyyyyyyyyyyyyyyyyyyyyyy"/>
+            <column name="status" value="VIEW"/>
+            <column name="user_id" value="4"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

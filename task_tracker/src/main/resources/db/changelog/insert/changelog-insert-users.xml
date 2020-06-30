@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="insert-users" author="">
+        <insert tableName="users">
+            <column name="username" value="username"/>
+            <column name="email" value="example@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First"/>
+            <column name="last_name" value="Last"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username12"/>
+            <column name="email" value="example12@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First12"/>
+            <column name="last_name" value="Last12"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username13"/>
+            <column name="email" value="example13@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First13"/>
+            <column name="last_name" value="Last13"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username14"/>
+            <column name="email" value="example14@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First14"/>
+            <column name="last_name" value="Last14"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username15"/>
+            <column name="email" value="example15@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First15"/>
+            <column name="last_name" value="Last15"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username16"/>
+            <column name="email" value="example16@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First16"/>
+            <column name="last_name" value="Last16"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username7"/>
+            <column name="email" value="example7@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First7"/>
+            <column name="last_name" value="Last7"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username8"/>
+            <column name="email" value="example8@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First8"/>
+            <column name="last_name" value="Last8"/>
+        </insert>
+        <insert tableName="users">
+            <column name="username" value="username9"/>
+            <column name="email" value="example9@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First9"/>
+            <column name="last_name" value="Last9"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username10"/>
+            <column name="email" value="example10@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First10"/>
+            <column name="last_name" value="Last10"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username2"/>
+            <column name="email" value="example2@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First2"/>
+            <column name="last_name" value="Last2"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="username" value="username3"/>
+            <column name="email" value="example3@gmail.com"/>
+            <column name="password" value="1111111"/>
+            <column name="first_name" value="First3"/>
+            <column name="last_name" value="Last3"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
