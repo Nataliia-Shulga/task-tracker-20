@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "9b6d1b88-dc39-41b3-ae6a-ba0239e3ffdb",
+		"name": "TaskTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyMTc5NSwiZXhwIjoxNTkzNTIyOTA2fQ.h3BrRRJ31r-WEYcU-ud2efwJv3T9Bpt7sPrxqmBppXyrlGaBqbSLS1zbYi6yQzl8SZm-VPz1mVeWvK8KM1TdEA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNjk1MSwiZXhwIjoxNTkzNTI4MDYyfQ.vBdzuLad9ZR6yXUgb2IsCNg1ums6_DJhipIgeHG7d8fdpJ5GZoQ454piqgm9rxI7xruCvTiKZrmtrC-DMTW2_A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNjk1MSwiZXhwIjoxNTkzNTI4MDYyfQ.vBdzuLad9ZR6yXUgb2IsCNg1ums6_DJhipIgeHG7d8fdpJ5GZoQ454piqgm9rxI7xruCvTiKZrmtrC-DMTW2_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\" : \"user01\",\r\n\"email\": \"user01@gmail.com\",\r\n\"password\" : \"123456\",\r\n\"firstName\" : \"First01\",\r\n\"lastName\": \"Last01\",\r\n\"role\": [\"user\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNjk1MSwiZXhwIjoxNTkzNTI4MDYyfQ.vBdzuLad9ZR6yXUgb2IsCNg1ums6_DJhipIgeHG7d8fdpJ5GZoQ454piqgm9rxI7xruCvTiKZrmtrC-DMTW2_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"New FirstName\",\r\n    \"lastName\": \"New Last Name\",\r\n    \"role\": [\"admin\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user by username",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNjk1MSwiZXhwIjoxNTkzNTI4MDYyfQ.vBdzuLad9ZR6yXUgb2IsCNg1ums6_DJhipIgeHG7d8fdpJ5GZoQ454piqgm9rxI7xruCvTiKZrmtrC-DMTW2_A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/username13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"username13"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "task",
+			"item": [
+				{
+					"name": "change  task status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxNzc0MCwiZXhwIjoxNTkzNTE4ODUxfQ.dp4lau5IQIYI9AZQxKVGhkIjwD7vMqib9EHftnRobn6DCAYdhhKeBDQLJUhDmzr8JctENBTneE1ASLkvkdnrsw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"status\": \"prog\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/change/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"change",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxOTA3MiwiZXhwIjoxNTkzNTIwMTgzfQ.CzqZiKDFStyFpnEZHAyCBZDGLdwq_SbXdf9CO2l2xZUBLJfIplkmuqZhxXFEGAWYioIAOj5nQQM6jTQkmIRsNg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get task by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxOTM3MiwiZXhwIjoxNTkzNTIwNDgzfQ.yxUxCmomfD_MrYSgnk16A5BwINJkpFXqNkXLJCx4iH0hJJLxYrwYSRYdW3-X-VDMBb6v_RE1dNJDDzvBHkly_w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxOTM3MiwiZXhwIjoxNTkzNTIwNDgzfQ.yxUxCmomfD_MrYSgnk16A5BwINJkpFXqNkXLJCx4iH0hJJLxYrwYSRYdW3-X-VDMBb6v_RE1dNJDDzvBHkly_w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"new_task\",\r\n\"description\": \"iiiiiiiiiii\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update task by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxOTkzOSwiZXhwIjoxNTkzNTIxMDUwfQ.3defOn7xSmvrr7tszHAW-THihd2arTTQgIsG1THGutf6lEGuSuMCRIRZ42zaYJosA6Vq2tS_TWM4Fz6npOpCYw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\": \"newTask\",\r\n\"description\": \"iuiiuiuiui\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete task  by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUxOTkzOSwiZXhwIjoxNTkzNTIxMDUwfQ.3defOn7xSmvrr7tszHAW-THihd2arTTQgIsG1THGutf6lEGuSuMCRIRZ42zaYJosA6Vq2tS_TWM4Fz6npOpCYw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tasks by status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyMzcyMCwiZXhwIjoxNTkzNTI0ODMxfQ.VWnxb_nBEIzkubA8szpY9Exk0aQJCIHFTLPI6a8rWBDZTd3ZZ4tX2TnrHJ0CRhbnha7kKLP33ov5R66Sl3gIXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/status/prog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"status",
+								"prog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sorted tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNTEzOSwiZXhwIjoxNTkzNTI2MjUwfQ.8BVvSLeGcrOlzV5EC5C0GLitsfpNEhXdqnJRoykHZ254WYuSUhGKOYE4wjwD0-FNPAwhW4V4focDuDyuzsImoA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/sort",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"sort"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change user in task",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5MzUyNjk1MSwiZXhwIjoxNTkzNTI4MDYyfQ.vBdzuLad9ZR6yXUgb2IsCNg1ums6_DJhipIgeHG7d8fdpJ5GZoQ454piqgm9rxI7xruCvTiKZrmtrC-DMTW2_A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"userId\": \"5\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"admin\",\r\n\"password\": \"1111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"admin\",\r\n\"password\": \"1111111\",\r\n\"email\": \"aaa@i.ua\",\r\n\"role\": [\"user\", \"admin\", \"mod\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
